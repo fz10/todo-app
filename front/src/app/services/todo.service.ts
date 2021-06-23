@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Todo } from './../models/Todo';
 import { Observable } from 'rxjs';
 
@@ -13,7 +13,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class TodoService {
-  todosUrl = 'https://jsonplaceholder.typicode.com/todos';
+  todosUrl = 'http://localhost:8080/todos';
   todosLimit = '?_limit=5';
 
   constructor(private http: HttpClient) { }

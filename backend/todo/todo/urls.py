@@ -1,8 +1,10 @@
 
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from django.conf.urls import url, include
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('todoapi.urls'))
+    url(r'^', include('todoapi.urls'))
 ]
