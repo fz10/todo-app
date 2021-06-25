@@ -13,7 +13,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class TodoService {
-  todosUrl = 'http://localhost:8080/todos';
+  todosUrl = 'http://localhost:8000/api/todos';
   todosLimit = '?_limit=5';
 
   constructor(private http: HttpClient) { }
